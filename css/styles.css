@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+header {
+  background: #0a1f44;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO WITH BACKGROUND IMAGE */
+.hero {
+  height: 85vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #0b5ed7;
+}
+
+.content, .page {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  background: #0a1f44;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 8px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
